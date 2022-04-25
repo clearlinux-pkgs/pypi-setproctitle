@@ -6,7 +6,7 @@
 #
 Name     : pypi-setproctitle
 Version  : 1.2.2
-Release  : 44
+Release  : 45
 URL      : https://files.pythonhosted.org/packages/a1/7f/a1d4f4c7b66f0fc02f35dc5c85f45a8b4e4a7988357a29e61c14e725ef86/setproctitle-1.2.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/a1/7f/a1d4f4c7b66f0fc02f35dc5c85f45a8b4e4a7988357a29e61c14e725ef86/setproctitle-1.2.2.tar.gz
 Source1  : https://files.pythonhosted.org/packages/a1/7f/a1d4f4c7b66f0fc02f35dc5c85f45a8b4e4a7988357a29e61c14e725ef86/setproctitle-1.2.2.tar.gz.asc
@@ -17,9 +17,6 @@ Requires: pypi-setproctitle-license = %{version}-%{release}
 Requires: pypi-setproctitle-python = %{version}-%{release}
 Requires: pypi-setproctitle-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: setproctitle
-Provides: setproctitle-python
-Provides: setproctitle-python3
 
 %description
 ==============================================
@@ -60,7 +57,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641497407
+export SOURCE_DATE_EPOCH=1650929185
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "

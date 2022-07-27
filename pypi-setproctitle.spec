@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x6013BD3AFCF957DE (daniele.varrazzo@gmail.com)
 #
 Name     : pypi-setproctitle
-Version  : 1.2.3
-Release  : 48
-URL      : https://files.pythonhosted.org/packages/78/9a/cf6bf4c472b59aef3f3c0184233eeea8938d3366bcdd93d525261b1b9e0a/setproctitle-1.2.3.tar.gz
-Source0  : https://files.pythonhosted.org/packages/78/9a/cf6bf4c472b59aef3f3c0184233eeea8938d3366bcdd93d525261b1b9e0a/setproctitle-1.2.3.tar.gz
-Source1  : https://files.pythonhosted.org/packages/78/9a/cf6bf4c472b59aef3f3c0184233eeea8938d3366bcdd93d525261b1b9e0a/setproctitle-1.2.3.tar.gz.asc
+Version  : 1.3.0
+Release  : 49
+URL      : https://files.pythonhosted.org/packages/39/c8/d97b2903e728672e810b528ac144e996d7e116eb63cb7d2f9d66301b4905/setproctitle-1.3.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/39/c8/d97b2903e728672e810b528ac144e996d7e116eb63cb7d2f9d66301b4905/setproctitle-1.3.0.tar.gz
+Source1  : https://files.pythonhosted.org/packages/39/c8/d97b2903e728672e810b528ac144e996d7e116eb63cb7d2f9d66301b4905/setproctitle-1.3.0.tar.gz.asc
 Summary  : A Python module to customize the process title
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -70,10 +70,10 @@ python3 components for the pypi-setproctitle package.
 
 
 %prep
-%setup -q -n setproctitle-1.2.3
-cd %{_builddir}/setproctitle-1.2.3
+%setup -q -n setproctitle-1.3.0
+cd %{_builddir}/setproctitle-1.3.0
 pushd ..
-cp -a setproctitle-1.2.3 buildavx2
+cp -a setproctitle-1.3.0 buildavx2
 popd
 
 %build
@@ -81,7 +81,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1656407211
+export SOURCE_DATE_EPOCH=1658942520
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
@@ -103,7 +103,7 @@ popd
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pypi-setproctitle
-cp %{_builddir}/setproctitle-1.2.3/COPYRIGHT %{buildroot}/usr/share/package-licenses/pypi-setproctitle/99eb8f40e1bd013ba90a0898094b02d9fb2eadec
+cp %{_builddir}/setproctitle-%{version}/COPYRIGHT %{buildroot}/usr/share/package-licenses/pypi-setproctitle/99eb8f40e1bd013ba90a0898094b02d9fb2eadec
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :

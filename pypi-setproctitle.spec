@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x6013BD3AFCF957DE (daniele.varrazzo@gmail.com)
 #
 Name     : pypi-setproctitle
-Version  : 1.3.0
-Release  : 49
-URL      : https://files.pythonhosted.org/packages/39/c8/d97b2903e728672e810b528ac144e996d7e116eb63cb7d2f9d66301b4905/setproctitle-1.3.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/39/c8/d97b2903e728672e810b528ac144e996d7e116eb63cb7d2f9d66301b4905/setproctitle-1.3.0.tar.gz
-Source1  : https://files.pythonhosted.org/packages/39/c8/d97b2903e728672e810b528ac144e996d7e116eb63cb7d2f9d66301b4905/setproctitle-1.3.0.tar.gz.asc
+Version  : 1.3.1
+Release  : 50
+URL      : https://files.pythonhosted.org/packages/a6/66/c302b8d6920eaa0274a5d88072c9dc64726306f8cfb4d90d3fc17a994ffc/setproctitle-1.3.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/a6/66/c302b8d6920eaa0274a5d88072c9dc64726306f8cfb4d90d3fc17a994ffc/setproctitle-1.3.1.tar.gz
+Source1  : https://files.pythonhosted.org/packages/a6/66/c302b8d6920eaa0274a5d88072c9dc64726306f8cfb4d90d3fc17a994ffc/setproctitle-1.3.1.tar.gz.asc
 Summary  : A Python module to customize the process title
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -70,10 +70,10 @@ python3 components for the pypi-setproctitle package.
 
 
 %prep
-%setup -q -n setproctitle-1.3.0
-cd %{_builddir}/setproctitle-1.3.0
+%setup -q -n setproctitle-1.3.1
+cd %{_builddir}/setproctitle-1.3.1
 pushd ..
-cp -a setproctitle-1.3.0 buildavx2
+cp -a setproctitle-1.3.1 buildavx2
 popd
 
 %build
@@ -81,7 +81,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1658942520
+export SOURCE_DATE_EPOCH=1659712248
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "

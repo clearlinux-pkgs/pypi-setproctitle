@@ -1,5 +1,5 @@
 PKG_NAME := pypi-setproctitle
-URL = https://files.pythonhosted.org/packages/a6/66/c302b8d6920eaa0274a5d88072c9dc64726306f8cfb4d90d3fc17a994ffc/setproctitle-1.3.1.tar.gz
+URL = https://files.pythonhosted.org/packages/b5/47/ac709629ddb9779fee29b7d10ae9580f60a4b37e49bce72360ddf9a79cdc/setproctitle-1.3.2.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common

@@ -7,7 +7,7 @@
 #
 Name     : pypi-setproctitle
 Version  : 1.3.4
-Release  : 65
+Release  : 66
 URL      : https://files.pythonhosted.org/packages/ae/4e/b09341b19b9ceb8b4c67298ab4a08ef7a4abdd3016c7bb152e9b6379031d/setproctitle-1.3.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ae/4e/b09341b19b9ceb8b4c67298ab4a08ef7a4abdd3016c7bb152e9b6379031d/setproctitle-1.3.4.tar.gz
 Summary  : A Python module to customize the process title
